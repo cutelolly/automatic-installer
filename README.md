@@ -1,7 +1,10 @@
+<p align="center">
+    <br> English | <a href="README_CN.md">中文</a>
+</p>
+
 # Description 
 Current project serves to help in automation of Ansys Internal build download and installation processes.
-This software is going to replace manual operations required by engineers to download and install Beta Version of 
-Ansys Electronics Desktop, Ansys Workbench and Ansys License Manager. 
+This software is going to replace manual operations required by engineers to download and install Beta Version of Ansys Electronics Desktop, Ansys Workbench and Ansys License Manager. 
 
 Two modes are possible: 
 1. Partially automated: user installs build by clicking "Install Now" button
