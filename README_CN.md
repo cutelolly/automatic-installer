@@ -1,5 +1,5 @@
 <p align="center">
-    <br> <a href="README_CN.md">中文</a> | English
+    <br> <a href="README.md">English</a> | 中文
 </p>
 
 # 简介
