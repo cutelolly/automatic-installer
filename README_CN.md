@@ -19,7 +19,7 @@
 
 如果您已经安装了任何版本的 `Ansys Build Downloader`，它将在下次启动时[自动更新](#tool-autoupdate)。
 
-![img](docs/images/ui.jpg)
+![img](docs/images/Ansys_install_ui_zh 2023-04-05 082744.png)
 
 用户始终可以在 _`Installation History panel`_（安装历史记录界面）上查看下载和安装进度。
 如果您想要终止进程仅仅只需在同一页面内点击 _`Runing Progress`_（运行进程）的那一行。
