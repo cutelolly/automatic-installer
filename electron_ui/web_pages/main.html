@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pre-Release Installer</title>
+    <title>Pre-Release 版本安装</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <link href="css/jquery-clockpicker.min.css" rel="stylesheet">
@@ -19,9 +19,9 @@
             <div class="menu">
                 <nav role="navigation" class="navigation-items w-nav-menu">
                     <a href="main.html" aria-current="page"
-                       class="navigation-item w-nav-link w--current">Downloader</a>
-                    <a href="settings.html" class="navigation-item w-nav-link">Advanced Settings</a>
-                    <a href="history.html" class="navigation-item w-nav-link">Installation History</a>
+                       class="navigation-item w-nav-link w--current">下载</a>
+                    <a href="settings.html" class="navigation-item w-nav-link">高级设置</a>
+                    <a href="history.html" class="navigation-item w-nav-link">安装历史</a>
                 </nav>
                 <div class="menu-button w-nav-button"></div>
             </div>
@@ -32,13 +32,13 @@
         <div class="w-col w-col-6">
             <div class="w-form" onkeydown="return event.key != 'Enter';">
                 <form>
-                    <label for="artifactory">Repository</label>
+                    <label for="artifactory">仓库</label>
                     <select class="select-field w-select" id="artifactory"></select>
 
-                    <label for="username">username</label>
+                    <label for="username">用户名</label>
                     <input type="text" class="text-field-2 w-input" maxlength="256" id="username" required="">
 
-                    <label for="password">artifactory API key</label>
+                    <label for="password">自定义的 API key</label>
                     <div class="w-row">
                         <div class="w-col w-col-11">
                             <input type="password" class="text-field-3 w-input password-field"
@@ -49,9 +49,9 @@
                         </div>
                     </div>
 
-                    <label for="version">Version and product</label>
+                    <label for="version">产品与版本信息</label>
                     <select id="version" class="select-field-2 w-select">
-                        <option value="None" selected="selected">Loading data...</option>
+                        <option value="None" selected="selected">数据加载中...</option>
                     </select>
                 </form>
             </div>
@@ -59,45 +59,45 @@
         <div class="w-col w-col-6">
             <div>
                 <div class="w-form">
-                        <label for="days">update days</label>
+                        <label for="days">更新日期</label>
                         <div id="days" class="w-layout-grid grid">
                             <label class="w-checkbox">
                                 <input type="checkbox" id="mo-checkbox" class="days-checkbox">
-                                <span class="w-form-label">mo</span>
+                                <span class="w-form-label">周一</span>
                             </label>
 
                             <label id="w-node-6337aa21f6aa-cefa8fca" class="w-checkbox">
                                 <input type="checkbox" id="tu-checkbox" class="days-checkbox">
-                                <span class="w-form-label">tu</span>
+                                <span class="w-form-label">周二</span>
                             </label>
 
                             <label class="w-checkbox">
                                 <input type="checkbox" id="we-checkbox" class="days-checkbox">
-                                <span class="w-form-label">we</span>
+                                <span class="w-form-label">周三</span>
                             </label>
 
                             <label id="w-node-0e1ca3779406-cefa8fca" class="w-checkbox">
                                 <input type="checkbox" id="th-checkbox" class="days-checkbox">
-                                <span class="w-form-label">th</span>
+                                <span class="w-form-label">周四</span>
                             </label>
 
                             <label id="w-node-4c83d058a673-cefa8fca" class="w-checkbox">
                                 <input type="checkbox" id="fr-checkbox" class="days-checkbox">
-                                <span class="w-form-label">fr</span>
+                                <span class="w-form-label">周五</span>
                             </label>
 
                             <label class="w-checkbox">
                                 <input type="checkbox" id="sa-checkbox" class="days-checkbox">
-                                <span class="w-form-label">sa</span>
+                                <span class="w-form-label">周六</span>
                             </label>
 
                             <label class="w-checkbox">
                                 <input type="checkbox" id="su-checkbox" class="days-checkbox">
-                                <span class="w-form-label">su</span>
+                                <span class="w-form-label">周日</span>
                             </label>
                         </div>
 
-                        <label for="time">update time</label>
+                        <label for="time">更新时间</label>
                         <div  class="input-group clockpicker">
                             <input id="time" type="text" class="form-control">
                             <span class="input-group-addon">
@@ -108,14 +108,14 @@
                 </div>
             </div>
 
-            <label for="schedule-table-div" class="table-label">timetable</label>
+            <label for="schedule-table-div" class="table-label">时间表</label>
             <div id="schedule-table-div">
                 <table id="schedule-table" class="tg">
                   <thead>
                     <tr>
-                        <th class="tg-4wcp product-column">Product</th>
-                        <th class="tg-4wcp version-column">Version</th>
-                        <th class="tg-4wcp schedule-column">Schedule</th>
+                        <th class="tg-4wcp product-column">产品</th>
+                        <th class="tg-4wcp version-column">版本</th>
+                        <th class="tg-4wcp schedule-column">进度</th>
                     </tr>
                   </thead>
                 <tbody></tbody>
@@ -125,20 +125,20 @@
     </div>
     <div class="w-row">
         <div class="w-col w-col-6">
-            <a id="install-once-button" href="#" class="button-2 w-button">Install Now</a>
+            <a id="install-once-button" href="#" class="button-2 w-button">立刻安装</a>
         </div>
         <div class="w-col w-col-5">
-            <a id="schedule-button" href="#" class="button-2 w-button">Schedule Installation</a>
+            <a id="schedule-button" href="#" class="button-2 w-button">Schedule Installation 安排计划安装</a>
         </div>
     </div>
 
     <div id="notification" class="hidden">
       <p id="message"></p>
       <button id="close-button" onClick="closeNotification()">
-        Close
+        关闭
       </button>
       <button id="restart-button" onClick="restartApp()" class="hidden">
-        Restart
+        重启
       </button>
     </div>
 
@@ -149,16 +149,16 @@
         <div class="w-row">
             <label class="w-checkbox api-checkbox">
                 <input type="checkbox" id="api-token-checkbox">
-                <span class="w-form-label">Refresh API token</span>
+                <span class="w-form-label">更新 API token</span>
             </label>
         </div>
 
         <div class="w-row">
             <div class="w-col w-col-6">
-                <button id="close-pass-button" onClick="closeGetApiWindow()">Close</button>
+                <button id="close-pass-button" onClick="closeGetApiWindow()">关闭</button>
             </div>
             <div class="w-col w-col-6">
-                <button id="get-key-button" onClick="getApiKey()">Get API Key</button>
+                <button id="get-key-button" onClick="getApiKey()">获取 API Key</button>
             </div>  
         </div>
     </div>
@@ -179,8 +179,8 @@
 
     <div class="_jw-tpk-container _jw-tpk-dark" style="z-index: 1010; display: none;">
     <div class="_jw-tpk-header">
-        <div class="_jw-tpk-hour">Hour</div>
-        <div class="_jw-tpk-minute">Minute</div>
+        <div class="_jw-tpk-hour">小时</div>
+        <div class="_jw-tpk-minute">分钟</div>
     </div>
     <div class="_jw-tpk-body">
         <div id="hour_list_id" class="_jw-tpk-hour">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Advanced Settings</title>
+    <title>高级设置</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -15,10 +15,10 @@
             </a>
             <div class="menu">
                 <nav role="navigation" class="navigation-items w-nav-menu">
-                    <a href="main.html" class="navigation-item w-nav-link">Downloader</a>
+                    <a href="main.html" class="navigation-item w-nav-link">下载</a>
                     <a href="settings.html" aria-current="page"
-                       class="navigation-item w-nav-link w--current">Advanced Settings</a>
-                    <a href="history.html" class="navigation-item w-nav-link">Installation History</a>
+                       class="navigation-item w-nav-link w--current">高级设置</a>
+                    <a href="history.html" class="navigation-item w-nav-link">安装历史</a>
                 </nav>
                 <div class="menu-button w-nav-button"></div>
             </div>
@@ -33,13 +33,13 @@
     </div>
     <div class="w-row">
         <div class="w-col w-col-6">
-            <label for="install_path" class="field-label">installation root path</label>
+            <label for="install_path" class="field-label">安装根路径</label>
             <input type="text" class="w-input" maxlength="256" id="install_path" onfocus="this.blur()">
 
-            <label for="download_path" class="field-label">download path</label>
+            <label for="download_path" class="field-label">下载路径</label>
             <input type="text" class="w-input" maxlength="256" id="download_path" onfocus="this.blur()">
 
-            <label for="license_file" class="field-label">Path to license file</label>
+            <label for="license_file" class="field-label">License 文件路径</label>
             <input type="text" class="w-input" maxlength="256" id="license_file" onfocus="this.blur()">
 
             <label for="wb_assoc" class="field-label">Workbench associations</label>
@@ -51,38 +51,38 @@
                     <form>
                         <label id="force_install_label" class="checkbox-zip-force">
                             <input type="checkbox" id="force_install" class="w-checkbox-input">
-                            <span class="checkbox-zip-force-label w-form-label">force install of the same build date
+                            <span class="checkbox-zip-force-label w-form-label">强制允许相同构建日期的安装
                             </span>
                         </label>
 
                         <label id="delete_zip_label" class="checkbox-zip-force">
                             <input type="checkbox" id="delete_zip" class="w-checkbox-input">
                             <span class="checkbox-zip-force-label w-form-label">
-                                Delete installation package after completion
+                                完成后删除安装包
                             </span>
                         </label>
 
                         <label id="replace_shortcut_label" class="checkbox-zip-force">
                             <input type="checkbox" id="replace_shortcut" class="w-checkbox-input">
                             <span class="checkbox-zip-force-label w-form-label">
-                                Replace AEDT shortcuts
+                                替换 AEDT 快捷方式
                             </span>
                         </label>
                     </form>
                 </div>
             </div>
 
-            <label class="field-label">Workbench Silent Installation Flags</label>
+            <label class="field-label">Workbench 静默安装标志</label>
             <div class="w-row">
                 <div class="w-col-6">
-                    <a id="wb-flags-button" href="#" class="button-2 button-left w-button">Select workbench products</a>
+                    <a id="wb-flags-button" href="#" class="button-2 button-left w-button">选择 workbench 产品</a>
                 </div>
             </div>
 
-            <label class="field-label">Electronics Desktop Registry/HPC options</label>
+            <label class="field-label">Electronics Desktop 注册表/HPC 选项</label>
             <div class="w-row">
                 <div class="w-col-6">
-                    <a id="aedt-registry-button" href="#" class="button-2 button-left w-button">Select AEDT option files</a>
+                    <a id="aedt-registry-button" href="#" class="button-2 button-left w-button">选择 AEDT 选项文件</a>
                 </div>
             </div>
         </div>
