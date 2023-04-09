@@ -15,7 +15,9 @@ In order to work with project you need to
         npm install
         cd ..
         ~~~
+   特别注意：更新electron版本需要修改一些错误。
 3. Install all required Python modules
+    使用p
     ~~~
     python -m pip install -r requirements.txt
     ~~~
