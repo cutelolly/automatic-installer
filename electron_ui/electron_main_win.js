@@ -21,12 +21,12 @@ const about_options = {
         type: 'info',
         buttons: ['OK'],
         defaultId: 2,
-        title: 'About',
+        title: '关于',
         message: 'Ansys Pre-Release Installer v' + version,
         detail: 
-            "Contact: betadownloader@ansys.com" +
-            "\nCreated by: Maksim Beliaev" +
-            "\nEmail: maksim.beliaev@ansys.com"             
+            "联系: betadownloader@ansys.com" +
+            "\n作者: Maksim Beliaev" +
+            "\n邮箱: maksim.beliaev@ansys.com"             
     };
 
 
@@ -43,7 +43,7 @@ function show_agreement() {
         type: 'info',
         buttons: ['OK'],
         defaultId: 2,
-        title: 'Agreement',
+        title: '双方协议',
         message: 'Ansys Beta Build Downloader Usage Agreement',
         detail: "This software collects information to support quality improvement, including user ID, version, " +
                 "downloaded software, time and status of the installation."
@@ -53,32 +53,32 @@ function show_agreement() {
 // Each object (dictionary) in a list is a dropdown item
 let submenu_list = [
     {
-        label:'Refresh Page',
+        label:'刷新页面',
         accelerator:process.platform == 'darwin' ? 'Command+R' : 'F5',
         click(){
             MainWindow.reload();
         }
     },
     {
-        label:'About',
+        label:'关于',
         click(){
             dialog.showMessageBox(null, about_options);
         }
     },
     {
-        label:'Agreement',
+        label:'协议',
         click(){
             show_agreement();
         }
     },
     {
-        label:"What's New",
+        label:"新功能",
         click(){
             whats_new_window.show();
         }
     },
     {
-        label: 'Quit',
+        label: '退出',
         accelerator: "CmdOrCtrl+Q",
         click(){
             app.quit();
@@ -95,7 +95,7 @@ if (
 } else {
     app_width = 2*1000;    // debug flag is sent or exe not built
     submenu_list.push({
-        label:'Developer Tools',
+        label:'开发工具',
         accelerator: 'Ctrl+Shift+I',
         role: "toggleDevTools"
     })
@@ -112,6 +112,8 @@ function create_settings_window() {
         frame: false,
         webPreferences: {
             nodeIntegration: true,
+            contextIsolation: true,
+            nodeIntegration: false,
             enableRemoteModule: true
         }
     });
@@ -239,7 +241,7 @@ app.on('ready', () => {
 
     const mainMenuTemplate =    [
         {
-            label: 'Menu',
+            label: '菜单',
             submenu: submenu_list
         }
     ];
